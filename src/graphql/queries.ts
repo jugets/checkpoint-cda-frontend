@@ -33,3 +33,15 @@ export const getCountries = gql`
         }
     }
 `
+
+export const getCountry = gql`
+    query Country($code: ID!) {
+        country(code: $code) {
+            code
+            name
+            emoji
+            currency
+            capital
+        }
+    }
+`

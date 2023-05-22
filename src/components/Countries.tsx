@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
-import { IContinent, ICountry } from "../interfaces";
-import { getContinents, getCountries } from "../graphql/queries";
+import { ICountry } from "../interfaces";
+import { getCountries } from "../graphql/queries";
 import { Link, useParams } from "react-router-dom";
 
 export default function Countries() {

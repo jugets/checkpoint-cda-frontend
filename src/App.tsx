@@ -6,6 +6,7 @@ import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter, Route, Router, Routes, useParams } from 'react-router-dom';
 import Continents from './components/Continents';
 import Countries from './components/Countries';
+import Country from './components/Country';
 
 
 function Main() {
@@ -17,7 +18,7 @@ function Main() {
         <Routes>
           <Route path="continents" element={<Continents />} />
           <Route path="continents/:continentCode" element={<Countries/>} />
-          {/*<Route path="continents/:continentId/:countryCode" element={<Country />} />*/}
+          <Route path="continents/:continentCode/:countryCode" element={<Country />} />
 
         </Routes>
       </div>
