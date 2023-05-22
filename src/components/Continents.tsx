@@ -15,17 +15,10 @@ export default function Continents() {
     return (
         <div>
           <main>
-            <section>
-              {continents?.map((continent) => {
-                return (
-                  <Link to={continent.code}/>
-                );
-              })}
-            </section>
             <ul>
                 {continents?.map((continent) => (
-                <li key={continent.code}>
-                    <Link to={continent.code} relative="path">{continent.name}</Link>
+                <li>
+                    <Link itemProp={continent.code} to={continent.code} relative="path">{continent.name}</Link>
                 </li>
                 ))}
             </ul>

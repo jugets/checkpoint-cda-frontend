@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from "@apollo/client/link/context";
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Router, Routes, useParams } from 'react-router-dom';
 import Continents from './components/Continents';
+import Countries from './components/Countries';
 
 
 function Main() {
@@ -15,8 +16,8 @@ function Main() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="continents" element={<Continents />} />
-          {/*<Route path="continents/:continentCode" element={<Countries />} />
-          <Route path="continents/:continentId/:countryCode" element={<Country />} />*/}
+          <Route path="continents/:continentCode" element={<Countries/>} />
+          {/*<Route path="continents/:continentId/:countryCode" element={<Country />} />*/}
 
         </Routes>
       </div>
