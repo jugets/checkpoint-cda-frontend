@@ -15,11 +15,13 @@ export default function Countries() {
 
     return (
         <div>
-          <main>
+          <main className="countries">
+            <h1>Countries</h1>
             <ul>
                 {countries?.map((country) => (
                 <li key={country.code}>
-                    <Link to={country.code} relative="path" key={country.code}>{country.emoji}{country.name}</Link>
+                    <p>{country.emoji}</p>
+                    <Link to={country.code} relative="path" key={country.code}>{country.name}</Link>
                 </li>
                 ))}
             </ul>

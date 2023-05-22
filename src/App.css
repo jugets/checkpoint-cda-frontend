@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+.continents-title {
+  text-align: center;
+}
+
+.continents {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  column-gap: 0;
+}
+
+.continents li {
+  width: 24%;
+  height: 100px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.continents li :link, li :visited {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+}
+
+.countries h1 {
+  text-align: center;
+}
+
+.countries ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  column-gap: 0;
+}
+
+.countries ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.countries ul li :link, li :visited {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+}
+
+.countries ul li p {
+  width: 100%;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country div{
+  font-size: 2em;
+}

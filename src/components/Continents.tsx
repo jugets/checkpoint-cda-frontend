@@ -15,9 +15,10 @@ export default function Continents() {
     return (
         <div>
           <main>
-            <ul>
+            <h1 className="continents-title">Continents</h1>
+            <ul className="continents">
                 {continents?.map((continent) => (
-                <li>
+                <li key={continent.code}>
                     <Link itemProp={continent.code} to={continent.code} relative="path">{continent.name}</Link>
                 </li>
                 ))}

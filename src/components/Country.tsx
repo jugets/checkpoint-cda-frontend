@@ -15,7 +15,7 @@ export default function Country() {
 
     return (
         <div>
-          <main>
+          <main className="country">
             <h1>{country?.name}</h1>
             <div>{country?.emoji}</div>
             <div>Currency: {country?.currency}</div>
